@@ -146,6 +146,19 @@ console.log(human);
 
 var choices = ['rock', 'paper', 'scissors'];
 
+if (human != choices[0]){
+	human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
+}
+
+else if (human != choices[1]){
+	human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
+}
+
+else if (human != choices[2]){
+	human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
+}
+	
+
 console.log("");
 console.log("Question 11");
 console.log(choices);
@@ -175,7 +188,7 @@ console.log("Question 13");
 if((0 <= computer) && (computer <= 0.33)){
 	
 		console.log(computer);
-		computer = "rock"
+		computer = "rock";
 		console.log(computer);
 }
 
@@ -192,7 +205,7 @@ else{
 			if (0 <= computer <= 0.33){
 	
 			console.log(computer);
-			computer = "rock"
+			computer = "rock";
 			console.log(computer);
 			}
 
@@ -200,7 +213,7 @@ else{
 		else {
 		
 			console.log(computer);
-			computer = "rock"
+			computer = "rock";
 			console.log(computer);
 		}
 	}
@@ -209,7 +222,7 @@ else{
 if((0 <= computer) && (computer <= 0.33)){
 	
 		console.log(computer);
-		computer = "rock"
+		computer = "rock";
 		console.log(computer);
 } 
 	
@@ -219,6 +232,67 @@ if((0 <= computer) && (computer <= 0.33)){
 // 14. Now add the following conditionals to the same statement:
 //    If the random number is between .34 and .66, set the computer variable to "paper".
 //    If the random number is between .67 and 1, set the computer variable to "scissors". (Who the hell seriously chooses scissors first?)
+
+console.log("");
+console.log("Question 14");
+
+var computer = Math.random();
+
+if((0.34 <= computer) && (computer <= 0.66)){
+	
+		console.log(computer);
+		computer = "paper";
+		console.log(computer);
+}
+
+if(computer > 0.66){
+	
+		console.log(computer);
+		computer = "scissors";
+		console.log(computer);
+}
+
+if((0 <= computer) && (computer <= 0.33)){
+	
+		console.log(computer);
+		computer = "rock";
+		console.log(computer);
+}
+
+else{
+
+ while (computer > 0.33){
+
+ 		if(computer > 0.33){
+	
+			console.log(computer);
+			console.log("NOT ROCK");
+			computer = Math.random();
+
+			if (0 <= computer <= 0.33){
+	
+			console.log(computer);
+			computer = "rock";
+			console.log(computer);
+			}
+
+		}
+		else {
+		
+			console.log(computer);
+			computer = "rock";
+			console.log(computer);
+		}
+	}
+}
+
+if((0 <= computer) && (computer <= 0.33)){
+	
+		console.log(computer);
+		computer = "rock";
+		console.log(computer);
+} 
+
 // 15. Using both "human", begin another conditional statement. At this time, leave the statements blank.
 //    In English, it will look like this:
 //      if human is "rock"
