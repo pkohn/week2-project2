@@ -146,16 +146,29 @@ console.log(human);
 
 var choices = ['rock', 'paper', 'scissors'];
 
-if (human != choices[0]){
-	human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
-}
+var choiceTrue = 0;
 
-else if (human != choices[1]){
-	human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
-}
+while (choiceTrue === 0) {
 
-else if (human != choices[2]){
-	human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
+	if (human === choices[0]){
+		console.log("YAAY ROCK");
+		var choiceTrue = 1;
+	}
+
+	else if (human === choices[1]){
+		console.log("YAAY PAPER");
+		var choiceTrue = 1;
+	}
+	
+	else if (human === choices[2]){
+		console.log("YAAY SCISSORS");
+		var choiceTrue = 1;
+	}
+
+	else {
+		human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
+	}
+	
 }
 	
 
