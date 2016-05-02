@@ -146,6 +146,37 @@ console.log(human);
 
 var choices = ['rock', 'paper', 'scissors'];
 
+console.log("");
+console.log("Question 15");
+var choiceTrue = 0;
+
+while (choiceTrue === 0) {
+
+	if (human === choices[0]){
+		console.log("YAAY ROCK");
+		var choiceTrue = 1;
+	}
+
+	else if (human === choices[1]){
+		console.log("YAAY PAPER");
+		var choiceTrue = 1;
+	}
+	
+	else if (human === choices[2]){
+		console.log("YAAY SCISSORS");
+		var choiceTrue = 1;
+	}
+
+	else {
+		human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
+	}
+	
+}
+
+console.log("");
+console.log("Question 11");
+console.log(choices);
+
 
 // 12. Define a variable called "computer" and use Math.random to allow the computer to randomly select a number.
 //    For reference:
@@ -287,36 +318,10 @@ alert("Computer chose " + computer);
 //      else
 //        leave this blank
 
+
 console.log("");
 console.log("Question 15");
-var choiceTrue = 0;
 
-while (choiceTrue === 0) {
-
-	if (human === choices[0]){
-		console.log("YAAY ROCK");
-		var choiceTrue = 1;
-	}
-
-	else if (human === choices[1]){
-		console.log("YAAY PAPER");
-		var choiceTrue = 1;
-	}
-	
-	else if (human === choices[2]){
-		console.log("YAAY SCISSORS");
-		var choiceTrue = 1;
-	}
-
-	else {
-		human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
-	}
-	
-}
-
-console.log("");
-console.log("Question 11");
-console.log(choices);
 
 // 16. Now inside of each condition, we need to compare the "human" variable to the "computer" variable,
 //    then print to the console who won the game.
