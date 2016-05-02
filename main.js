@@ -146,36 +146,6 @@ console.log(human);
 
 var choices = ['rock', 'paper', 'scissors'];
 
-var choiceTrue = 0;
-
-while (choiceTrue === 0) {
-
-	if (human === choices[0]){
-		console.log("YAAY ROCK");
-		var choiceTrue = 1;
-	}
-
-	else if (human === choices[1]){
-		console.log("YAAY PAPER");
-		var choiceTrue = 1;
-	}
-	
-	else if (human === choices[2]){
-		console.log("YAAY SCISSORS");
-		var choiceTrue = 1;
-	}
-
-	else {
-		human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
-	}
-	
-}
-	
-
-console.log("");
-console.log("Question 11");
-console.log(choices);
-
 
 // 12. Define a variable called "computer" and use Math.random to allow the computer to randomly select a number.
 //    For reference:
@@ -314,9 +284,119 @@ if((0 <= computer) && (computer <= 0.33)){
 //        leave this blank
 //      else
 //        leave this blank
+
+console.log("");
+console.log("Question 15");
+var choiceTrue = 0;
+
+while (choiceTrue === 0) {
+
+	if (human === choices[0]){
+		console.log("YAAY ROCK");
+		var choiceTrue = 1;
+	}
+
+	else if (human === choices[1]){
+		console.log("YAAY PAPER");
+		var choiceTrue = 1;
+	}
+	
+	else if (human === choices[2]){
+		console.log("YAAY SCISSORS");
+		var choiceTrue = 1;
+	}
+
+	else {
+		human = prompt("DAMNIT! Please choose either rock, paper, or scissors");
+	}
+	
+}
+
+console.log("");
+console.log("Question 11");
+console.log(choices);
+
 // 16. Now inside of each condition, we need to compare the "human" variable to the "computer" variable,
 //    then print to the console who won the game.
+
+
+console.log("");
+console.log("Question 16");
+
+if (human === 'rock'){
+	
+	if (computer === 'rock'){
+		
+		console.log("TIE!");
+	
+	}
+	
+	else if (computer === "paper"){
+		
+		console.log("Computer Wins!");
+		
+	}
+	
+	else {
+		
+		console.log("You Win!");
+		
+	}
+}
+
+else if (human === 'paper'){
+	
+	if (computer === 'paper'){
+		
+		console.log("TIE!");
+	
+	}
+	
+	else if (computer === "rock"){
+		
+		console.log("You Win!");
+		
+	}
+	
+	else {
+		
+		console.log("Computer Wins!");
+		
+	}
+}
+
+//else human = scissors
+else {
+	
+	if (computer === 'scissors'){
+		
+		console.log("TIE!");
+	
+	}
+	
+	else if (computer === "rock"){
+		
+		console.log("Computer Wins!");
+		
+	}
+	
+	else {
+		
+		console.log("You Win!");
+		
+	}
+}
+
+
+
 // 17. Give yourself a high five for completing your first javascript game!
+
+console.log("");
+console.log("Question 17");
+alert("HIGH FIVE!");
+
+
+
 // 18. Use the game you made above and rework it using a switch statement.
 // 19. What happens if your user enters something other than "rock", "paper", or "scissors?". Change your default case
 //     to print a snarky message to the console if the input doesn't match any of the options.
