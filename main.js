@@ -276,6 +276,8 @@ if((0 <= computer) && (computer <= 0.33)){
 		console.log(computer);
 } 
 
+alert("Computer chose " + computer);
+
 // 15. Using both "human", begin another conditional statement. At this time, leave the statements blank.
 //    In English, it will look like this:
 //      if human is "rock"
@@ -327,19 +329,19 @@ if (human === 'rock'){
 	
 	if (computer === 'rock'){
 		
-		console.log("TIE!");
+		alert("TIE!");
 	
 	}
 	
 	else if (computer === "paper"){
 		
-		console.log("Computer Wins!");
+		alert("Computer Wins!");
 		
 	}
 	
 	else {
 		
-		console.log("You Win!");
+		alert("You Win!");
 		
 	}
 }
@@ -348,19 +350,19 @@ else if (human === 'paper'){
 	
 	if (computer === 'paper'){
 		
-		console.log("TIE!");
+		alert("TIE!");
 	
 	}
 	
 	else if (computer === "rock"){
 		
-		console.log("You Win!");
+		alert("You Win!");
 		
 	}
 	
 	else {
 		
-		console.log("Computer Wins!");
+		alert("Computer Wins!");
 		
 	}
 }
@@ -370,19 +372,19 @@ else {
 	
 	if (computer === 'scissors'){
 		
-		console.log("TIE!");
+		alert("TIE!");
 	
 	}
 	
 	else if (computer === "rock"){
 		
-		console.log("Computer Wins!");
+		alert("Computer Wins!");
 		
 	}
 	
 	else {
 		
-		console.log("You Win!");
+		alert("You Win!");
 		
 	}
 }
