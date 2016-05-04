@@ -145,6 +145,10 @@ while (count < max){
 	count++;
 }
 
+for (var l = "#"; l.length < 8; l += "#"){
+	console.log(l);
+}
+
 
 // RO SHAM BO!
 // We're going to create a paper, rock, scissors game that prompts you for your choice and allows the computer to
