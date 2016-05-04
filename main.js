@@ -459,5 +459,21 @@ alert("HIGH FIVE!");
 //  # # # #
 // # # # #
 
+var s = '';
+var row = 0;
+for (var i = 0; i < 33; i++){
+	row = Math.floor(i / 4);
+	//console.log(row);
+	if (row % 2){
+		s += '# ';
+	} else {
+		s += ' #';
+	}
+	if (s.length === 8){
+		console.log(s);
+		s = '';
+	}
+}
+
 // When you have a program that generates this pattern, define a variable size = 8 and change the program
 // sso that it works for any size, outputting a grid of the given width and height.
