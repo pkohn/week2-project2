@@ -475,5 +475,26 @@ for (var i = 0; i < 33; i++){
 	}
 }
 
+for (var l = "#"; l.length < 8; l += "#"){
+	console.log(l);
+}
+
+var s = '';
+var row = 0;
+for (var i = 0; i <= 32; i++){
+	row = Math.floor(i / 4);
+	//console.log(row);
+	var isOddRow = row % 2 === 1;
+	if (isOddRow){
+		s += '# ';
+	} else {
+		s += ' #';
+	}
+	if (s.length === 8){
+		console.log(s);
+		s = '';
+	}
+}
+
 // When you have a program that generates this pattern, define a variable size = 8 and change the program
 // sso that it works for any size, outputting a grid of the given width and height.
